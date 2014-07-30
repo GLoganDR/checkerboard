@@ -1,0 +1,23 @@
+tr.tr1 td.td1 {
+  height: 75px;
+  width: 75px;
+  background-color: red;
+}
+
+tr.tr0 td.td1 {
+  height: 75px;
+  width: 75px;
+  background-color: black;
+}
+
+tr.tr1 td.td0 {
+  height: 75px;
+  width: 75px;
+  background-color: black;
+}
+
+tr.tr0 td.td0 {
+  height: 75px;
+  width: 75px;
+  background-color: red;
+}
