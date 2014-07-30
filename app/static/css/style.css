@@ -1,23 +1,33 @@
-tr.tr1 td.td1 {
-  height: 75px;
-  width: 75px;
-  background-color: red;
+table{
+  border: 1px solid grey;
+  padding: 0px;
 }
 
-tr.tr0 td.td1 {
-  height: 75px;
-  width: 75px;
+table td{
+  padding: 0px;
+  width: 50px;
+  height: 50px;
   background-color: black;
+  background-size: cover;
 }
 
-tr.tr1 td.td0 {
-  height: 75px;
-  width: 75px;
-  background-color: black;
+/* CHECKER BOARD */
+
+table tr:nth-child(2n) td:nth-child(2n), table tr:nth-child(2n-1) td:nth-child(2n-1){
+  background-color: white;
 }
 
-tr.tr0 td.td0 {
-  height: 75px;
-  width: 75px;
-  background-color: red;
+/* TOP PIECES */
+
+
+
+table tr:nth-child(-2n+3) td:nth-child(2n-1), table tr:nth-child(2) td:nth-child(2n){
+ background-image: url(/images/doge.png);
+ border-radius: 100%;
+}
+
+/* BOTTOM PIECES */
+
+table tr:nth-child(2n+6) td:nth-child(2n), table tr:nth-child(7) td:nth-child(2n-1){
+  background-image: url(/images/Grumpy-Cat-01.png);
 }
